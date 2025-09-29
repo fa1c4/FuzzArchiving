@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# need to echo "core" | sudo tee /proc/sys/kernel/core_pattern at the host machine
 ##
 # Pre-requirements:
 # - env FUZZER: path to fuzzer work dir
@@ -11,6 +11,8 @@
 # - env FUZZARGS: extra arguments to pass to the fuzzer
 ##
 set +e
+
+export AFL_I_DONT_CARE_ABOUT_MISSING_CRASHES=1
 
 mkdir -p "$SHARED/findings"
 OUTDIR="${SHARED}/findings"
@@ -51,9 +53,9 @@ run_mode() {
 
     echo "running bazzafl with -z $mode"
 
+    # "${flag_cmplog[@]}" \
     "$FUZZER/repo/afl-fuzz" \
         -i "$SEEDS_DIR" -o "$OUTDIR" \
-        # "${flag_cmplog[@]}" \
         -d -z "$mode" -t "$timeout_ms" -- \
         "$TARGET_BIN" ${ARGS:-}
     local rc=$?
