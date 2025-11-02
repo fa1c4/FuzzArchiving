@@ -1,0 +1,3 @@
+[libfuzzer]
+# We cap single testcase size. HTTP/3 frames/headers aren't arbitrarily huge.
+max_len = 2048
