@@ -1,0 +1,14 @@
+homepage: "https://github.com/jpr5/ngrep"
+language: c
+primary_contact: "jpr5@users.noreply.github.com"
+auto_ccs:
+  - "security@oss-fuzz.com"
+fuzzing_engines:
+  - libfuzzer
+  - afl
+  - honggfuzz
+sanitizers:
+  - address
+  - undefined
+  - memory
+main_repo: "https://github.com/jpr5/ngrep.git"
