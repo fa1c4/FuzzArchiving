@@ -1,0 +1,16 @@
+# projects/kate/project.yaml
+homepage: https://kate-editor.org
+main_repo: https://github.com/KDE/kate.git
+language: c++
+fuzzing_engines:
+  - libfuzzer
+sanitizers:
+  - address
+  - undefined
+primary_contact: "azesinte298@gmail.com"   # TODO: when upstreaming, replace with the official KDE contact
+auto_ccs:
+  - "azesinte298@gmail.com"                # You can keep your own address here initially to receive crash reports
+labels:
+  - editor
+  - kde
+  - qt
