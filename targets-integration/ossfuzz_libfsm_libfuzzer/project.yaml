@@ -1,0 +1,14 @@
+homepage: "https://github.com/katef/libfsm"
+language: c
+primary_contact: "azesinte@gmail.com"
+sanitizers:
+  - address
+  - undefined
+architectures:
+  - x86_64
+  - i386
+main_repo: "https://github.com/katef/libfsm"
+fuzzing_engines:
+  - libfuzzer
+  - afl
+  - honggfuzz

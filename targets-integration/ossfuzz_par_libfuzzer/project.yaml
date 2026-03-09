@@ -1,0 +1,17 @@
+homepage: "https://github.com/prideout/par"
+language: c
+main_repo: "https://github.com/prideout/par"
+
+primary_contact: "azesinte@gmail.com"
+auto_ccs:
+  - "REPLACE_WITH_MAINTAINER_EMAIL_IF_ANY"
+
+fuzzing_engines:
+  - libfuzzer
+
+sanitizers:
+  - address
+  - undefined
+
+architectures:
+  - x86_64
