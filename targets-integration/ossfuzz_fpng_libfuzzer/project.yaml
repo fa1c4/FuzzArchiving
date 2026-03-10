@@ -1,0 +1,17 @@
+homepage: "https://github.com/richgel999/fpng"
+language: c++
+primary_contact: "azesinte@gmail.com"
+auto_ccs:
+  - "oss-fuzz@richgel.com"
+architectures:
+  - x86_64
+  - i386
+sanitizers:
+  - address
+  - undefined
+main_repo: "https://github.com/richgel999/fpng"
+
+fuzzing_engines:
+  - libfuzzer
+  - afl
+  - honggfuzz

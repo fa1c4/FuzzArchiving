@@ -1,0 +1,17 @@
+# oss-fuzz/projects/libtorrent/project.yaml
+homepage: "https://github.com/rakshasa/libtorrent"
+language: c++
+primary_contact: "azesinte@gmail.com"
+auto_ccs:
+  - "a3at.mail@gmail.com"
+fuzzing_engines:
+  - libfuzzer
+  - afl
+  - honggfuzz
+sanitizers:
+  - address
+  - undefined
+architectures:
+  - x86_64
+  - i386
+main_repo: "https://github.com/rakshasa/libtorrent.git"

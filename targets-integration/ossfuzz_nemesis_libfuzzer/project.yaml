@@ -1,0 +1,13 @@
+homepage: "https://github.com/libnet/nemesis"
+language: c
+primary_contact: "azesinte@gmail.com"
+auto_ccs:
+  - "security@oss-fuzz.com"
+fuzzing_engines:
+  - libfuzzer
+  - afl
+  - honggfuzz
+sanitizers:
+  - address
+  - undefined
+main_repo: "https://github.com/libnet/nemesis.git"
