@@ -1,0 +1,13 @@
+homepage: "https://github.com/Rosalie241/RMG"
+language: c++
+primary_contact: "azesinte@gmail.com"
+auto_ccs:
+  - "rosalie@mailbox.org"
+sanitizers:
+  - address
+  - undefined
+fuzzing_engines:
+  - libfuzzer
+architectures:
+  - x86_64
+main_repo: "https://github.com/Rosalie241/RMG.git"

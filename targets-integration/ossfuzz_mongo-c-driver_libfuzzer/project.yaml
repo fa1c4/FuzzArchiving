@@ -1,0 +1,11 @@
+homepage: "https://github.com/mongodb/mongo-c-driver"
+language: c
+main_repo: "https://github.com/mongodb/mongo-c-driver"
+fuzzing_engines:
+  - libfuzzer
+sanitizers:
+  - address
+primary_contact: "azesinte@gmail.com"
+auto_ccs:
+  - another-email@example.com
+vendor_ccs: []
