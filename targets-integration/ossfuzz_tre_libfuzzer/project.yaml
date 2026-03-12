@@ -1,0 +1,22 @@
+homepage: "https://github.com/laurikari/tre"
+main_repo: "https://github.com/laurikari/tre"
+
+language: c++
+
+fuzzing_engines:
+  - libfuzzer
+  - afl
+  - honggfuzz
+
+sanitizers:
+  - address
+  - memory
+  - undefined
+
+architectures:
+  - x86_64
+  - i386
+
+primary_contact: "azesinte@gmail.com"
+auto_ccs:
+  - "ville@laurikari.net"

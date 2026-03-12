@@ -1,0 +1,15 @@
+homepage: "https://github.com/phaag/nfdump"
+language: c++
+primary_contact: "azesinte@gmail.com"
+auto_ccs:
+  - "nfdump-discuss@lists.sourceforge.net"
+
+main_repo: "https://github.com/phaag/nfdump"
+
+fuzzing_engines:
+  - libfuzzer
+  - honggfuzz
+  - afl
+
+architectures:
+  - x86_64

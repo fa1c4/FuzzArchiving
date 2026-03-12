@@ -1,0 +1,11 @@
+homepage: "https://libmesh.github.io/"
+language: c++
+primary_contact: "azesinte@gmail.com" 
+auto_ccs:
+  - "second@example.com"
+fuzzing_engines:
+  - libfuzzer
+sanitizers:
+  - address
+  - undefined
+main_repo: "https://github.com/libMesh/libmesh"
