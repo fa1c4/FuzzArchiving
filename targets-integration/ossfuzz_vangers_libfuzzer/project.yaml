@@ -1,0 +1,23 @@
+homepage: "https://github.com/KranX/Vangers"
+language: c++
+
+primary_contact: "azesinte@gmail.com"
+
+auto_ccs:
+  - "another-maintainer@example.com"
+
+sanitizers:
+  - address
+  - undefined
+  - memory
+
+architectures:
+  - x86_64
+  - i386
+
+fuzzing_engines:
+  - afl
+  - honggfuzz
+  - libfuzzer
+
+main_repo: "https://github.com/KranX/Vangers.git"

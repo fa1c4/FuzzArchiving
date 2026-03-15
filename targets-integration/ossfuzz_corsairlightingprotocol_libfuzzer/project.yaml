@@ -1,0 +1,13 @@
+homepage: "https://github.com/Legion2/CorsairLightingProtocol"
+language: c++
+primary_contact: "azesinte@gmail.com"
+main_repo: "https://github.com/Legion2/CorsairLightingProtocol.git"
+
+fuzzing_engines:
+  - libfuzzer
+  - afl
+  - honggfuzz
+
+sanitizers:
+  - address
+  - undefined

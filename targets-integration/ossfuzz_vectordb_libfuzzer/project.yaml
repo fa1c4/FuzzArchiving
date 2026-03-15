@@ -1,0 +1,15 @@
+# oss-fuzz/projects/vectordb/project.yaml
+homepage: "https://github.com/epsilla-cloud/vectordb"
+language: c++
+main_repo: "https://github.com/epsilla-cloud/vectordb.git"
+
+fuzzing_engines:
+  - libfuzzer
+
+sanitizers:
+  - address
+  - undefined
+
+primary_contact: "azesinte@gmail.com"
+auto_ccs:
+  - "TODO2@epsilla.com"

@@ -1,0 +1,20 @@
+# struct2json project.yaml
+homepage: https://github.com/armink/struct2json
+main_repo: https://github.com/armink/struct2json.git
+
+language: c
+
+primary_contact: "azesinte@gmail.com"
+auto_ccs:
+  - "yuxuebao@msn.com"
+
+fuzzing_engines:
+  - libfuzzer
+
+sanitizers:
+  - address
+  - undefined
+
+architectures:
+  - x86_64
+  - i386

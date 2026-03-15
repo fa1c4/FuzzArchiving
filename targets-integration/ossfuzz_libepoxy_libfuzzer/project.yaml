@@ -1,0 +1,23 @@
+# oss-fuzz/projects/libepoxy/project.yaml
+
+homepage: "https://github.com/anholt/libepoxy"
+language: c
+primary_contact: "azesinte@gmail.com"
+
+auto_ccs:
+  - "azesinte@gmail.com"
+
+architectures:
+  - x86_64
+  - i386
+
+fuzzing_engines:
+  - libfuzzer
+  - afl
+  - honggfuzz
+
+sanitizers:
+  - address
+  - undefined
+
+main_repo: "https://github.com/anholt/libepoxy.git"

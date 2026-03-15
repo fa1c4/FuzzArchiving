@@ -1,0 +1,17 @@
+homepage: "http://libWetCloth.info"
+language: c++
+primary_contact: "azesinte@gmail.com"
+
+sanitizers:
+  - address
+  - undefined
+
+architectures:
+  - x86_64
+
+fuzzing_engines:
+  - libfuzzer
+  - afl
+  - honggfuzz
+
+main_repo: "https://github.com/raymondyfei/libwetcloth"
