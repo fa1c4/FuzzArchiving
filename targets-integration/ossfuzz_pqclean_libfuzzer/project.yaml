@@ -1,0 +1,6 @@
+homepage: "https://github.com/google/oss-fuzz"
+language: c
+primary_contact: "info@oss-fuzz.com"
+auto_ccs:
+-
+main_repo: 'https://github.com/google/oss-fuzz'
