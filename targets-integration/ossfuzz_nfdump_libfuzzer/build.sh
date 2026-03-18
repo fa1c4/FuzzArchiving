@@ -61,8 +61,17 @@ find "$SRC/nfdump/src" \( -name '*.h' -o -name '*.c' \) -exec cp -u {} "$SRC/" \
 NFDUMP_CFLAGS="$(pkg-config --cflags nfdump 2>/dev/null || echo "-I$SRC/nfdump/src -I$SRC/nfdump/src/include")"
 NFDUMP_LIBS="$(pkg-config --libs nfdump 2>/dev/null || echo "-L/usr/local/lib -lnfdump -lnffile")"
 
-# Additionally include the nfdump top-level directory (mainly for config.h)
-NFDUMP_CFLAGS="${NFDUMP_CFLAGS} -I$SRC/nfdump"
+# Add the internal source subdirectories used by harnesses that include parser
+# sources and collector-private headers directly.
+NFDUMP_CFLAGS="${NFDUMP_CFLAGS} \
+  -I$SRC/nfdump \
+  -I$SRC/nfdump/src \
+  -I$SRC/nfdump/src/collector \
+  -I$SRC/nfdump/src/include \
+  -I$SRC/nfdump/src/inline \
+  -I$SRC/nfdump/src/libnfdump \
+  -I$SRC/nfdump/src/libnffile \
+  -I$SRC/nfdump/src/netflow"
 
 NFDUMP_LIBS="${NFDUMP_LIBS} -llz4 -lzstd -lbz2"
 
